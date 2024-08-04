@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="netflix_icon.png">
+        <title>Netflix</title>
+        <link rel="stylesheet" href="style2.css"> 
+    </head>
+
+    <body>
+        <!-- all the content should be inside this video -->
+        <div class="video-background">
+            <!-- bringing the video -->
+            <video autoplay loop muted playsinline>
+                <source src="jagame.mp4" type="video/mp4">
+            </video>
+
+            <!-- all things above the video -->
+            <div class="content">
+                <img src="movie.jpg" alt="movie title image" class="title-img">
+
+                <!-- <h1>Welcome to Netflix</h1> -->
+                <p>Thrilling Tamil gangster drama is a cinematic masterpiece that promises to keep you on the edge of your seat from start to finish.</p>
+                
+                <div class="buttons">
+                    <button id="play-btn" class="btn play">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24px" height="24px">
+                            <path d="M8 5v14l11-7z"></path>
+                        </svg>
+                        <script>
+                            // Get the Play button element
+                            const playBtn = document.getElementById('play-btn');
+                            // Add an event listener to the Play button
+                            playBtn.addEventListener('click', () => {
+                            // Navigate to the next page (e.g., video.html)
+                            window.location.href = 'video.html';
+                           });
+                        </script>
+                        Play
+                    </button>
+                    <button class="btn more-info">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 50 50">
+                            <path d="M 25 2 C 12.309295 2 2 12.309295 2 25 C 2 37.690705 12.309295 48 25 48 C 37.690705 48 48 37.690705 48 25 C 48 12.309295 37.690705 2 25 2 z M 25 4 C 36.609824 4 46 13.390176 46 25 C 46 36.609824 36.609824 46 25 46 C 13.390176 46 4 36.609824 4 25 C 4 13.390176 13.390176 4 25 4 z M 25 11 A 3 3 0 0 0 22 14 A 3 3 0 0 0 25 17 A 3 3 0 0 0 28 14 A 3 3 0 0 0 25 11 z M 21 21 L 21 23 L 22 23 L 23 23 L 23 36 L 22 36 L 21 36 L 21 38 L 22 38 L 23 38 L 27 38 L 28 38 L 29 38 L 29 36 L 28 36 L 27 36 L 27 21 L 26 21 L 22 21 L 21 21 z"></path>
+                            </svg>
+                        More Info
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+
+
+        <!--------------- NAV BAR DIV --------------->
+        <div class="navbar">
+
+            <!--------------- LEFT ALIGNMENT IN NAV BAR --------------->
+            <div class="left-nav"> 
+                <!--------------- NAV BAR - LOGO --------------->
+                <a href="/browse" class="logo">
+                    <img src="Netflix_logo.png" alt="Netflix Logo">
+                </a>
+            
+                <!--------------- NAV BAR - MENU --------------->
+                <ul class="navigation">
+                    <li><a href="C:\Users\Dhanush\Desktop\Sample Bharat Intern\Netflix\index.html">Home</a></li>
+                    <li><a href="/browse/genre/24">TV Shows</a></li>
+                    <li><a href="/browse/genre/39">Movies</a></li>
+                    <li><a href="/latest">New & Popular</a></li>
+                    <li><a href="/browse/my-list">My List</a></li>
+                    <li><a href="/browse/original-audio">Browse by Languages</a></li>
+                </ul>
+            </div>
+
+            <!--------------- RIGHT ALIGNMENT IN NAV BAR --------------->
+            <div class="right-nav"> 
+                <button class="icon-search" aria-label="Search">
+                    <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.7955 15.8111L21 21M18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+
+                <a href="/Kids">Children</a>
+
+                <button class="icon-bell" aria-label="Notifications">
+                    <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.0003 21H15.0003M18.0003 8.6C18.0003 7.11479 17.3682 5.69041 16.2429 4.6402C15.1177 3.59 13.5916 3 12.0003 3C10.409 3 8.88288 3.59 7.75766 4.6402C6.63245 5.69041 6.0003 7.11479 6.0003 8.6C6.0003 11.2862 5.32411 13.1835 4.52776 14.4866C3.75646 15.7486 3.37082 16.3797 3.38515 16.5436C3.40126 16.7277 3.4376 16.7925 3.58633 16.9023C3.71872 17 4.34793 17 5.60636 17H18.3943C19.6527 17 20.2819 17 20.4143 16.9023C20.563 16.7925 20.5994 16.7277 20.6155 16.5436C20.6298 16.3797 20.2441 15.7486 19.4729 14.4866C18.6765 13.1835 18.0003 11.2862 18.0003 8.6Z" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span class="notification-count">2</span>
+                </button>
+
+                <div class="profile">
+                    <img src="userpic.png" alt="User Profile" class="profile-pic">
+                    <div class="dropdown">
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Account</a></li>
+                            <li><a href="#">Help Center</a></li>
+                            <li class="separator"></li>
+                            <li><a href="#">Sign Out</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </body>
+
+</html>
